@@ -1,0 +1,129 @@
+.add-data-body{
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.todo-form{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    /* background-color: beige; */
+    margin-top: 100px;
+    border-radius: 15px;
+    width: 100%;
+max-width: 700px;
+
+}
+.todo-form  div {
+    display: flex;
+    justify-content: space-evenly;
+}
+.todo-form  div label{
+    font-size: 1.5rem;
+    width: 100px;
+}
+.todo-form  div input{
+    color: black;
+    border: 0px ;
+    height: 40px;
+    
+}
+#form-content{
+    height: 200px;
+    
+}
+#form-content textarea{
+    width: 70%;
+    border: 0px;
+    outline: none;
+    font-family: cursive;
+    resize: none;
+    /* border: 2px solid black; */
+    transition: 0.2s ease-in;
+    border-radius: 10px;
+   
+}
+
+.form-btn-body{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#form-content textarea:focus {
+    
+    background-color: transparent;
+    border: 2px solid rgb(0, 81, 255);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#form-title input{
+    width: 70%;
+    border: 0px;
+    outline: none;
+    font-family: cursive;
+    transition: 0.2s ease-in;
+    border-radius: 10px;
+}
+#form-title input:focus {
+    
+    background-color: transparent;
+    border-bottom: 2px solid rgb(0, 81, 255);
+    color: white;
+}
+
+.todo-form button{
+    width: 30%;
+    height: 40px;
+    outline: none;
+    /* margin-left: 25%; */
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: cursive;
+    border: 3.5px solid rgb(8, 106, 225);
+}
+#create-btn{
+    background-color: rgb(8, 106, 225);
+    margin-right: 5%;
+    box-shadow: 5px 5px 5px black;
+    /* transition: 0.1s ease-out; */
+}
+#create-btn:active{
+    box-shadow: 0px 0px;
+}
+
+@media only  screen and (max-width:480px) {
+
+   .form-title{
+    align-items: center;
+   }
+   #form-title label{
+    font-size: 1rem;
+    width: 90%;
+    display: none;
+   }
+   #form-title input{
+    width: 90%;
+   }
+    #content-label{
+        font-size: 1rem;
+        width: auto;
+        display: none;
+    }
+    #form-content textarea{
+        width: 90%;
+    }
+    .todo-form button{
+        width: 90px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .todo-form button:nth-child(even){
+        color: white;
+    }
+}
